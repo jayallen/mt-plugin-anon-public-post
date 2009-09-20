@@ -1,0 +1,17 @@
+name: Anonymous Public Posts
+version: 0.1
+id: AnonPublicPost
+key: AnonPublicPost
+author_name: Jay Allen, Endevver Consulting
+author_link: http://endevver.com/
+description: Provides the ability to accept unauthenticated (anonymous) entry submissions from your community. Requires MT Pro or Enterprise.
+plugin_link: http://endevver.com/plugins/anon-public-posts
+doc_link: http://endevver.com/plugins/anon-public-posts
+
+config_settings:
+    PublicPostDefaultUser:
+        default: ~
+
+callbacks:
+    MT::App::Community::init_request: $AnonPublicPost::AnonPublicPost::check_user
+    # MT::App::Community::post_run: $AnonPublicPost::AnonPublicPost::reap_session
