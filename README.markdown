@@ -26,12 +26,21 @@ In order to use this plugin, you need to first set up three things:
 
 ### Setting up the default user ###
 
+1. Create a new role that only has the permission to create entries ([screenshot](http://emberapp.com/jayallen/images/post-only-role-for-anonymous-public-post-plug))
+2. Create a new user to act as the author of all anonymous entries.
+3. Assign the post-only role in #1 to the new author created in #2
 
+### Modify the Create Entry template ###
+
+In this step, you need to modify the styles and javascript on the Create Entry index template so that the user has a choice whether to sign in or to post anonymously.  This is an exercise left to the reader although contribution of a clear set of simple instructions would be welcome.
+ 
 ## CONFIGURATION ##
 
-The plugin has a **mandatory** configuration directive (set in `mt-config.cgi`), `PublicPostDefaultUser`, through which you  specify the default MT user account to use as the author for unauthenticated posts.  The value should be the username on the account:
+The plugin has a **mandatory** configuration directive (set in `mt-config.cgi`), `PublicPostDefaultUser`, through which you  specify the default author username created above:
 
     PublicPostDefaultUser joeschmoe
+
+Once this is set correctly, you should be set to go.
 
 ## TODO ##
 
