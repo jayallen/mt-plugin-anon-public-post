@@ -19,7 +19,7 @@ Download the code or the Git repo. Inside you will find a directory (under `plug
 
 ## INITIAL SETUP ##
 
-In order to use this plugin, you need to first set up three things:
+In order to use this plugin, you need to first set up two things:
 
 * An MT user account designated to be the default author for anonymous submitters
 * A modified version of the "create entry" index template that doesn't force users to sign in
@@ -44,7 +44,7 @@ Once this is set correctly, you should be set to go.
 
 ## TODO ##
 
-* The plugin should probably prevent any logins to to the PublicPostDefaultUser account by default plus offer a config to ovverride that default.
+* The plugin should probably prevent any logins to to the PublicPostDefaultUser account by default plus offer a config to override that default.
 * Figure out a way via Perl to invalidate the session on output of the confirmation page without instead getting redirected to the long screen.  Annoying!
 
 ## VERSION HISTORY ##
@@ -58,6 +58,10 @@ This plugin was brought to you by [Jay Allen][], Principal of [Endevver Consulti
 ## LICENSE ##
 
 This program is distributed under the terms of the GNU General Public License, version 2.
+
+## BUG REPORTS AND FEATURE REQUESTS ##
+
+If you find a bug in the plugin or would like to request a feature, you can [check our bug tracker](https://endevver.lighthouseapp.com/projects/37823-anonymous-public-posts/tickets) to see if it's already been filed and, if not, [file a new ticket](https://endevver.lighthouseapp.com/projects/37823-anonymous-public-posts/tickets/new).
 
 [Movable Type]: http://movabletype.org
 [Melody]: http://openmelody.org
