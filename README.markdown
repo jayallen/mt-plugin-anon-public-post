@@ -1,5 +1,7 @@
 # Anonymous Public Posts plugin for Movable Type and Melody #
 
+This plugin enables you to accept anonymous entry submissions from any visitor to your published blog, regardless of whether or not they have an account or they are logged in.
+
 ## VERSION ##
 
 0.1-beta (EXPERIMENTAL - not yet officially released)
@@ -17,7 +19,7 @@ Download the code or the Git repo. Inside you will find a directory (under `plug
 
 ## INITIAL SETUP ##
 
-This plugin enables you to accept anonymous entry submissions from any visitor to your published blog, regardless of whether or not they have an account or they are logged in.  In order to do so, you will need the following:
+In order to use this plugin, you need to first set up three things:
 
 * An MT user account designated to be the default author for anonymous submitters
 * A modified version of the "create entry" index template that doesn't force users to sign in
