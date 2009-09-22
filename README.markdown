@@ -22,7 +22,7 @@ Download the code or the Git repo. Inside you will find a directory (under `plug
 In order to use this plugin, you need to first set up two things:
 
 * An MT user account designated to be the default author for anonymous submitters
-* A modified version of the "create entry" index template that doesn't force users to sign in
+* A modified version of the "create entry" index template that doesn't force users to sign in.
 
 ### Setting up the default user ###
 
@@ -32,7 +32,7 @@ In order to use this plugin, you need to first set up two things:
 
 ### Modify the Create Entry template ###
 
-In this step, you need to modify the styles and javascript on the Create Entry index template so that the user has a choice whether to sign in or to post anonymously.  This is an exercise left to the reader although contribution of a clear set of simple instructions would be welcome.
+In this step, you need to modify the styles and/or javascript on the Create Entry index template so that the user has a choice whether to sign in or to post anonymously.  This is an exercise left to the reader although contribution of a clear set of simple instructions would be welcome.
  
 ## CONFIGURATION ##
 
@@ -42,15 +42,11 @@ The plugin has a **mandatory** configuration directive (set in `mt-config.cgi`),
 
 Once this is set correctly, you should be set to go.
 
-## TODO ##
-
-* The plugin should probably prevent any logins to to the PublicPostDefaultUser account by default plus offer a config to override that default.
-* Figure out a way via Perl to invalidate the session on output of the confirmation page without instead getting redirected to the long screen.  Annoying!
-
 ## VERSION HISTORY ##
 
 * **09/19/2009** - Initial private beta release of v0.1-beta
 * **09/22/2009** - Version 1.0, initial production release
+* **09/22/2009** - Version 1.1, cleans up the cookie/session data so that the user cannot log in under the anonymous user
 
 ## AUTHOR ##
 

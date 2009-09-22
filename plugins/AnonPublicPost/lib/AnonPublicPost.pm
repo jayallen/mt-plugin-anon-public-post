@@ -41,10 +41,9 @@ sub reap_session {
     
     if ( $app->request('kill_anonymous_session') ) {
         # $logger->debug('Killing session: ', $app->{session}->id);
-        MT::Auth->invalidate_credentials( { app => $app } );
-        # delete $app->{session};
-        # my %cookies = $app->cookies();
-        # $app->_invalidate_commenter_session( \%cookies );
+        my $user = $app->user;
+        MT::Auth->invalidate_credentials( { app => $app } ); # Kill cookie/session
+        $app->user($user); # Leave app user to avoid returning login page
     }
 }
 

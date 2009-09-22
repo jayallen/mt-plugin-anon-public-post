@@ -1,5 +1,5 @@
 name: Anonymous Public Posts
-version: 1.0
+version: 1.1
 id: AnonPublicPost
 key: AnonPublicPost
 author_name: Jay Allen, Endevver Consulting
@@ -14,4 +14,4 @@ config_settings:
 
 callbacks:
     MT::App::Community::init_request: $AnonPublicPost::AnonPublicPost::check_user
-    # MT::App::Community::post_run: $AnonPublicPost::AnonPublicPost::reap_session
+    MT::App::Community::post_run: $AnonPublicPost::AnonPublicPost::reap_session
