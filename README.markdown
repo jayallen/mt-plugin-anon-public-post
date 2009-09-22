@@ -4,7 +4,7 @@ This plugin enables you to accept anonymous entry submissions from any visitor t
 
 ## VERSION ##
 
-0.1-beta (EXPERIMENTAL - not yet officially released)
+1.0 (Released September 22, 2009)
 
 ## REQUIREMENTS ##
 
@@ -50,6 +50,7 @@ Once this is set correctly, you should be set to go.
 ## VERSION HISTORY ##
 
 * **09/19/2009** - Initial private beta release of v0.1-beta
+* **09/22/2009** - Version 1.0, initial production release
 
 ## AUTHOR ##
 
