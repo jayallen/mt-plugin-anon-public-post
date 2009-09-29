@@ -4,7 +4,7 @@ This plugin enables you to accept anonymous entry submissions from any visitor t
 
 ## VERSION ##
 
-1.2 (Released September 22, 2009)
+1.3 (Released September 28, 2009)
 
 ## REQUIREMENTS ##
 
@@ -48,6 +48,7 @@ Once this is set correctly, you should be set to go.
 * **09/22/2009** - Version 1.0, initial production release
 * **09/22/2009** - Version 1.1, cleans up the cookie/session data so that the user cannot log in under the anonymous user
 * **09/22/2009** - Version 1.2, Commented code and very minor readability tweaks
+* **09/28/2009** - Version 1.3, Fixed posting by registered logged in users
 
 ## AUTHOR ##
 
