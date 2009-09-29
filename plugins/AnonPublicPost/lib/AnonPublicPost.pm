@@ -11,8 +11,9 @@ sub check_user {
     # $logger ||= MT::Log::Log4perl->new(); $logger->trace();
 
     # We only run if we detect an anonymous user posting an entry
-    return if $app->user;               # Not anonymous
-    return unless 'post' eq $app->mode; # Not a 'post' (entry submission)
+    # return if $app->user;  <<<<< WRONG! Does not work on MT::App::Community
+    return if $app->_login_user_commenter(); # Not anonymous
+    return unless 'post' eq $app->mode;      # Not a 'post' (entry submission)
 
     # $logger->info('>>>>>>>>>>>> ANONYMOUS POSTING <<<<<<<<<<<<<<<<');
 
